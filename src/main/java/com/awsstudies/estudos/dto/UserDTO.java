@@ -15,15 +15,12 @@ public class UserDTO {
     @NotBlank
     private String email;
     @NotBlank
-    private String password;
-    @NotBlank
     private UserRoles userRoles;
     private String urlImage;
 
     public UserDTO(User user) {
         this.name = user.getName();
         this.email = user.getEmail();
-        this.password = user.getPassword();
         this.userRoles = user.getUserRoles();
         this.urlImage = user.getUrlImage();
     }
